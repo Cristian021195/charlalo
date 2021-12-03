@@ -218,3 +218,29 @@ video {
 #ayuda p {
     margin-bottom: 16px;
 }
+
+
+/*ANIMACIONES*/
+
+@keyframes slide{
+    0%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    33%{
+      transform: translateX(25%);
+      opacity: 0;
+    }
+    66%{
+      transform: translateX(-25%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+.slideOut{
+    animation: slide;
+    animation-duration: .5s;
+}
