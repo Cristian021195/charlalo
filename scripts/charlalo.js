@@ -5,7 +5,10 @@ function ir(seccionID) {
     Array.from(document.querySelectorAll("main>article")).forEach(
         seccion => seccion.style.display = 'none'
     );
+    
+    document.querySelector("#" + seccionID).classList.remove('slideOut');//animacion aqui
     document.querySelector("#" + seccionID).style.display = 'block';
+    document.querySelector("#" + seccionID).classList.add('slideOut');
 }
 ir('charla');
 
